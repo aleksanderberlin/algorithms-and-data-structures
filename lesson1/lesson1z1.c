@@ -8,7 +8,7 @@
 
 #include <stdio.h>
 
-int main() {
+int main(int argc, char* argv[]) {
     float m, h;
     printf("Enter weigth: ");
     scanf("%f.0", &m);

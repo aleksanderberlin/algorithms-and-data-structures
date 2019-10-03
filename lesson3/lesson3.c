@@ -1,6 +1,6 @@
 
 //
-//  main.c
+//  lesson3.c
 //  lesson3
 //
 //  Created by Александр Берлин on 03/10/2019.
@@ -33,6 +33,7 @@ void swap(int *a, int *b) {
     *a = *b;
     *b = temp;
 }
+
 // 1. Попробовать оптимизировать пузырьковую сортировку. Сравнить количество операций сравнения оптимизированной и не оптимизированной программы. Написать функции сортировки, которые возвращают количество операций.
 
 void bubbleSort(int* array, int size) {
@@ -65,6 +66,7 @@ void optimizedBubbleSort(int* array, int size) {
 }
 
 // 2. Реализовать шейкерную сортировку.
+
 void shakerSort(int* array, int size) {
     int left = 0, right = size - 1;
     int operations = 0;
@@ -87,6 +89,7 @@ void shakerSort(int* array, int size) {
 }
 
 // 3. Погуглить как осуществляется Pigeon Hole Sort и попробовать реализовать на языке С.
+
 void pigeonHoleSort(int* array, int size) {
     int calculate_array[100] = { 0 };
     int i = 0, j = 0;
@@ -105,7 +108,6 @@ void pigeonHoleSort(int* array, int size) {
     printf("\nPigeon Hole Sort. Output array:\n");
     printArray(array, size);
 }
-
 
 int main(int argc, const char * argv[]) {
     const int size = 20;
